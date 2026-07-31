@@ -6,104 +6,146 @@
 <title>Happy Birthday Khushi ❤️</title>
 
 <style>
-body{
+*{
 margin:0;
 padding:0;
-background:linear-gradient(135deg,#ff4d6d,#ffb6c1);
+box-sizing:border-box;
 font-family:Arial,sans-serif;
-display:flex;
-justify-content:center;
-align-items:center;
-height:100vh;
-overflow:hidden;
-text-align:center;
-color:white;
 }
 
-.card{
-background:rgba(255,255,255,0.15);
+body{
+background:linear-gradient(135deg,#ff4d6d,#ffb6c1);
+overflow-x:hidden;
+color:white;
+text-align:center;
+}
+
+.container{
 padding:30px;
-border-radius:20px;
-backdrop-filter:blur(10px);
-box-shadow:0 0 20px rgba(0,0,0,0.3);
 }
 
 h1{
 font-size:40px;
+margin-top:20px;
 animation:zoom 2s infinite alternate;
 }
 
-p{
-font-size:20px;
+.message{
+max-width:900px;
+margin:25px auto;
+background:rgba(255,255,255,.15);
+padding:25px;
+border-radius:20px;
+backdrop-filter:blur(10px);
+line-height:1.8;
+font-size:18px;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:15px;
+padding:20px;
+}
+
+.gallery img{
+width:100%;
+border-radius:20px;
+box-shadow:0 0 15px rgba(0,0,0,.3);
+transition:.4s;
+}
+
+.gallery img:hover{
+transform:scale(1.05);
 }
 
 button{
-padding:12px 25px;
-font-size:18px;
+padding:14px 28px;
 border:none;
 border-radius:30px;
+font-size:18px;
 background:white;
 color:#ff3366;
+margin:20px;
 cursor:pointer;
-margin-top:20px;
 }
 
-button:hover{
-background:#ffe6ec;
+#love{
+font-size:22px;
+padding:20px;
+display:none;
 }
 
 @keyframes zoom{
 from{transform:scale(1);}
-to{transform:scale(1.1);}
+to{transform:scale(1.08);}
 }
 
 .heart{
-position:absolute;
+position:fixed;
 color:red;
-font-size:25px;
+font-size:24px;
 animation:float 6s linear infinite;
 }
 
 @keyframes float{
 0%{transform:translateY(100vh);}
-100%{transform:translateY(-100vh);}
+100%{transform:translateY(-120vh);}
 }
 </style>
-
 </head>
 
 <body>
 
-<div class="card">
+<div class="container">
+
 <h1>🎂 Happy Birthday Khushi ❤️</h1>
 
-<p>May your life always be filled with happiness, love and success. 🌸</p>
+<div class="message">
 
-<button onclick="showWish()">Click Here 🎁</button>
+<p>
+Happy Birthday to my favourite one...💕<br><br>
 
-<p id="wish"></p>
+Actually I don't have so many words for you but...<br><br>
+
+You are one of the most beautiful parts of my life, and I feel so lucky to have you. ❤️‍🩹<br><br>
+
+Thank you for being my comfort, my happiness, and the reason behind so many of my smiles. 🫂💞<br><br>
+
+May this new year of your life bring you endless love, peace, success, and every little thing your heart wishes for.<br><br>
+
+Stay happy, stay blessed, and keep shining exactly the way you do.✨<br><br>
+
+You will always be my favourite person, my safe place, and my forever favourite.❤️<br><br>
+
+<b>And one more thing...</b><br><br>
+
+No matter where life takes us, my heart will always smile whenever it thinks of you. ❤️🌹<br><br>
+
+Happy Birthday, My Dear Khushi. 🫂💌🎂
+</p>
+
 </div>
 
-<script>
+<button onclick="showLove()">Click Here ❤️</button>
 
-function showWish(){
-document.getElementById("wish").innerHTML=
-"💖 You are very special. Wishing you a day full of smiles, love and beautiful memories. Happy Birthday Khushi! 🎉❤️";
-}
+<div id="love">
+💖 I Love The Way You Smile.<br>
+Forever My Favourite Person. ❤️
+</div>
 
-setInterval(function(){
-let heart=document.createElement("div");
-heart.className="heart";
-heart.innerHTML="❤️";
-heart.style.left=Math.random()*100+"vw";
-heart.style.fontSize=(20+Math.random()*30)+"px";
-document.body.appendChild(heart);
+<h2>📸 Our Beautiful Memories</h2>
 
-setTimeout(()=>heart.remove(),6000);
-
-},300);
-
-</script>
-
-</body>
-</html>
+<div class="gallery">
+  <img src="IMG-20260616-WA0005.jpg">
+<img src="IMG-20260616-WA0007.jpg">
+<img src="IMG-20260616-WA0009.jpg">
+<img src="IMG-20260616-WA0010.jpg">
+<img src="IMG-20260616-WA0011.jpg">
+<img src="IMG-20260616-WA0022.jpg">
+<img src="IMG-20260619-WA0006.jpg">
+<img src="IMG-20260620-WA0010.jpg">
+<img src="IMG-20260620-WA0019.jpg">
+<img src="IMG-20260620-WA0020.jpg">
+<img src="IMG-20260620-WA0022.jpg">
+<img src="IMG-20260620-WA0027.jpg">
